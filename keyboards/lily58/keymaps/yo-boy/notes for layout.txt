@@ -1,0 +1,34 @@
+potential
+
+gaston: seems good to take from and lower complexity
+
+ninjonas: lower seems promising
+
+cykedev:look at and learn how adjust works, also dot and comma on mods, for apex ping too
+
+datadavd: power keys and 'more keys' on one layer
+
+domnantas: keypad
+
+mikefightsbears: same navigation on both layers
+
+muuko: just two layers?
+
+yshrsmz: remove right shift? also top layer row
+
+yuchi: one function one number layer
+
+
+
+me: move backspace left. maybr swap layer keys anf ones next to them
+navigation layer on right hand, functions on left hand layer
+
+add a function layer instead of right gui
+
+shift on a thumb key
+
+maybe add " on a layer or fix the shift
+
+add a control on the right half
+
+function row instead of nums on top row in both layers
