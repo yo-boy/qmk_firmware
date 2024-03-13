@@ -4,6 +4,7 @@ enum layer_number {
   _QWERTY = 0,
   _LOWER,
   _RAISE,
+  _SI,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -65,10 +66,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   `----------------------------'           '------''--------------------'
  */
 [_RAISE] = LAYOUT(
-  _______, _______, _______, _______, _______, _______,                     KC_PSCR, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLD, KC_VOLU,
+  TG(_SI), _______, _______, _______, _______, _______,                     KC_PSCR, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLD, KC_VOLU,
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSLS,
-  _______, KC_HOME, KC_PGUP, KC_PGDN, KC_END,  XXXXXXX,                     KC_PGUP, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_PGDN,
+  _______, KC_HOME, KC_PGUP, KC_PGDN, KC_END,  XXXXXXX,                     KC_HOME, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_END,
   _______, _______, _______, _______, KC_DQT,  KC_COLN,  _______, _______,  KC_PLUS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, _______,
                              _______, _______, _______,  _______, _______,  _______, KC_DEL,  _______
-		  )
+		  ),
+/*
+  layer to play signalis
+*/
+
+[_SI] = LAYOUT(
+  _______, TG(_SI), _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______,
+  KC_TAB,  _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______,
+  KC_CAPS, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______,
+  KC_LSFT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+                             _______, _______, _______, _______, _______, _______, _______, _______
+)
 };
